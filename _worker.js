@@ -27,6 +27,8 @@ let subConverter = "SUBAPI.cmliussss.net"; //在线订阅转换后端，目前�
 let subConfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_MultiCountry.ini"; //订阅配置文件
 let subProtocol = 'https';
 
+let alpn = 'h3';
+
 export default {
 	async fetch(request, env) {
 		const userAgentHeader = request.headers.get('User-Agent');
